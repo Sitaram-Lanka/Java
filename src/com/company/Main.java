@@ -2,13 +2,18 @@ package com.company;
 import java.util.Scanner;
 
 public class Main {
-
     public String userName(String username) {
         return "Hello " + username;
     }
 
     public int sum(int a, int b){
         return a+b;
+    }
+    public int diff(int a, int b){
+        if (a>b)
+            return a-b;
+        else
+            return b-a;
     }
 
     public static void main(String[] args) {
@@ -32,7 +37,6 @@ public class Main {
         int n2 = num2.nextInt();
 
         System.out.println("Sum of "+n1+ " and "+ n2 +" is = " +m.sum(n1,n2));
-
-
+        System.out.println("Diff of "+n1+ " and "+ n2 +" is = " +m.diff(n1,n2));
     }
 }
