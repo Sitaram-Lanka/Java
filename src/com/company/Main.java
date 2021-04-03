@@ -15,6 +15,9 @@ public class Main {
         else
             return b-a;
     }
+    public int multiply(int a, int b){
+        return a*b;
+    }
 
     public static void main(String[] args) {
 	// write your code here
@@ -38,5 +41,6 @@ public class Main {
 
         System.out.println("Sum of "+n1+ " and "+ n2 +" is = " +m.sum(n1,n2));
         System.out.println("Diff of "+n1+ " and "+ n2 +" is = " +m.diff(n1,n2));
+        System.out.println("Diff of "+n1+ " and "+ n2 +" is = " +m.multiply(n1,n2));
     }
 }
